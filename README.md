@@ -1,4 +1,4 @@
-# WiFi-passwords-Windows-10
+# See-WiFi-passwords-Windows-10
 This code is wrote in batch.
 This code generates all the Wi-Fi's password that you staid anytime and put it in a folder called "wifi" with the .xml extension.
 After reads all the .xml files and ask you wich wifi point do you want to see the passwords.
