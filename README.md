@@ -9,3 +9,6 @@ Don't tested in Windows 11, but might works in it.
 
 
 Hash md5:66a21f44476b336c3a51444cfbe6eeb1
+
+
+Hash sha256:117cdebabd986a217febbb1951ec91234bcef1a7d9df47b7dba0871d02389a04
