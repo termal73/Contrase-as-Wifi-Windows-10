@@ -11,6 +11,8 @@ if exist %folder% (
     move %xml% ./%folder%>NUl
 )
 cd %folder%
+echo If you want to exit, put exit in lowercase characters.
+echo.
 for %%f in (%xml%) do (
    echo %%f
 )
@@ -18,6 +20,14 @@ for %%f in (%xml%) do (
 :wi-fi
 echo.
 set /p wifi=Copy and paste the name of the wifi with the .xml extension that you want to see the password: 
+if %wifi%==exit (
+    echo.
+    echo Thank you for use this program.
+    cd ..
+    rmdir /S /Q %folder%
+    timeout /T 3 /NOBREAK>NUl
+    exit
+)
 if not exist %wifi% (
     echo The wifi point that you put it, doesn't exist.
     goto wi-fi
@@ -37,12 +47,12 @@ cd ..
 echo.
 echo.
 :option
-set /p deseo=Do you want to see another different wifi password? yes/no: 
-if %deseo%==yes (
+set /p desire=Do you want to see another different wifi password? yes/no: 
+if %desire%==yes (
     cls
     goto start
 )
-if %deseo%==no (
+if %desire%==no (
     echo.
     echo.
     echo Thank you for use this program.
